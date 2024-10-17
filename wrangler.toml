@@ -4,6 +4,11 @@ main = "src/index.ts"
 compatibility_date = "2024-10-11"
 compatibility_flags = ["nodejs_compat"]
 
+routes = [
+  { pattern = "other.blue", custom_domain = true },
+  { pattern = "*.other.blue/*", zone_name = "other.blue" },
+]
+
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
